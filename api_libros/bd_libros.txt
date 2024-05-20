@@ -1,0 +1,34 @@
+DROP DATABASE IF EXISTS api_libros;
+CREATE DATABASE api_libros CHARSET utf8mb4;
+USE api_libros;
+
+CREATE TABLE Libros (
+    id INT AUTO_INCREMENT,
+    titulo VARCHAR(255),
+    autor VARCHAR(255),
+    genero VARCHAR(255),
+    disponibilidad BOOLEAN,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Libros (titulo, autor, genero, disponibilidad) VALUES
+('Don Quijote', 'Miguel de Cervantes', 'Novela', true),
+('Cien años de soledad', 'Gabriel García Márquez', 'Novela', true),
+('1984', 'George Orwell', 'Ciencia ficción', true),
+('Moby Dick', 'Herman Melville', 'Novela', true),
+('Ulises', 'James Joyce', 'Novela', true),
+('En busca del tiempo perdido', 'Marcel Proust', 'Novela', true),
+('La Odisea', 'Homero', 'Epopeya', true),
+('Hamlet', 'William Shakespeare', 'Tragedia', true),
+('Guerra y paz', 'León Tolstói', 'Novela', true),
+('La divina comedia', 'Dante Alighieri', 'Poesía', true),
+('Crimen y castigo', 'Fiódor Dostoyevski', 'Novela', true),
+('Madame Bovary', 'Gustave Flaubert', 'Novela', true),
+('Orgullo y prejuicio', 'Jane Austen', 'Novela', true),
+('Las aventuras de Huckleberry Finn', 'Mark Twain', 'Novela', true),
+('Las mil y una noches', 'Anónimo', 'Cuento', true),
+('Fausto', 'Johann Wolfgang von Goethe', 'Drama', true),
+('El gran Gatsby', 'F. Scott Fitzgerald', 'Novela', true),
+('En el camino', 'Jack Kerouac', 'Novela', true),
+('Matar a un ruiseñor', 'Harper Lee', 'Novela', true),
+('La metamorfosis', 'Franz Kafka', 'Novela corta', true);

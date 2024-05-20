@@ -1,0 +1,23 @@
+ version: '3.3'
+
+ services:
+   api_libros:
+     build: ./api_libros
+     image: angello599/api-libros
+     ports:
+       - "8000:8000"
+   api_usuarios:
+     build: ./api_usuarios
+     image: angello599/api-usuarios
+     ports:
+       - "8001:8001"
+   api_prestamos:
+     build: ./api_prestamos
+     image: angello599/api-prestamos
+     ports:
+       - "8002:8002"
+   web_app:
+     build: ./web
+     image: angello599/web
+     ports:
+       - "8003:8003"

@@ -1,0 +1,32 @@
+DROP DATABASE IF EXISTS api_usuarios;
+CREATE DATABASE api_usuarios CHARSET utf8mb4;
+USE api_usuarios;
+
+CREATE TABLE Usuarios (
+    id INT AUTO_INCREMENT,
+    nombre VARCHAR(255),
+    direccion VARCHAR(255),
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Usuarios (nombre, direccion) VALUES
+('Juan Perez', 'Av. Los Alamos 123, Lima'),
+('Maria Rodriguez', 'Calle Los Pinos 456, Lima'),
+('Carlos Gomez', 'Jr. Las Flores 789, Lima'),
+('Ana Torres', 'Av. El Sol 321, Lima'),
+('Luis Morales', 'Calle La Luna 654, Lima'),
+('Sofia Castro', 'Jr. El Mar 987, Lima'),
+('Pedro Ruiz', 'Av. La Montaña 135, Lima'),
+('Isabel Paredes', 'Calle El Río 246, Lima'),
+('Jorge Vargas', 'Jr. El Bosque 579, Lima'),
+('Carmen Diaz', 'Av. El Desierto 753, Lima'),
+('Ricardo Romero', 'Calle La Selva 951, Lima'),
+('Patricia Mendoza', 'Jr. La Pradera 852, Lima'),
+('Manuel Gutierrez', 'Av. El Océano 456, Lima'),
+('Teresa Aguilar', 'Calle El Lago 159, Lima'),
+('Roberto Peña', 'Jr. La Sierra 753, Lima'),
+('Laura Rios', 'Av. El Valle 951, Lima'),
+('Fernando Herrera', 'Calle El Volcán 852, Lima'),
+('Beatriz Salazar', 'Jr. La Costa 456, Lima'),
+('Alfredo Navarro', 'Av. La Llanura 159, Lima'),
+('Rosa Mendez', 'Calle El Glaciar 753, Lima');
